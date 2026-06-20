@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perhitungan Bonus Pembelian</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Perhitungan Bonus Pembelian</h2>
+
+    <label>Nama Pelanggan</label>
+    <input type="text" id="pelanggan">
+
+    <label>Nama Produk</label>
+    <input type="text" id="produk">
+
+    <label>Harga Produk</label>
+    <input type="number" id="harga">
+
+    <label>Jumlah Pembelian</label>
+    <input type="number" id="jumlah">
+
+    <button class="btn-hitung" onclick="hitung()">
+        Hitung
+    </button>
+
+    <button class="btn-reset" onclick="resetForm()">
+        Reset
+    </button>
+
+    <div class="hasil" id="hasil">
+        <h3>Hasil Perhitungan</h3>
+
+        <p>
+            <strong>Nama Pelanggan :</strong>
+            <span id="outPelanggan"></span>
+        </p>
+
+        <p>
+            <strong>Nama Produk :</strong>
+            <span id="outProduk"></span>
+        </p>
+
+        <p>
+            <strong>Total Belanja :</strong>
+            Rp <span id="outBelanja"></span>
+        </p>
+
+        <p>
+            <strong>Potongan :</strong>
+            Rp <span id="outPotongan"></span>
+        </p>
+
+        <p>
+            <strong>Total Bayar :</strong>
+            Rp <span id="outBayar"></span>
+        </p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
